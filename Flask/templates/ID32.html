@@ -1,0 +1,25 @@
+<form method="post">
+    Age- <input type="text" name="t1"/>
+    <br>
+    sex- <input type="text" name="t2"/>
+    <br>
+    bps- <input type="text" name="t3"/>
+    <br>
+    chol- <input type="text" name="t4"/>
+    <br>
+    <br>
+    <input type="submit" value="Click to Submit"/>
+    <br>
+    <br>
+    <br>
+    {{ans}}
+
+{% if "Yes" in ans %}
+<p>&#128148;</p>
+{%else%}
+<p>&#9829;</p>
+{%endif%}
+
+<img src="{{url_for('static',filename='heart.png')}}"/>
+
+</form>
